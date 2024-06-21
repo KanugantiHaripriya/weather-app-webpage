@@ -85,27 +85,23 @@ button:hover{
     margin-right: 10px;
 }
 #weather-container {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 100%;
     padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    justify-items: center;
+    text-align: center;
 }
 
-input[type="text"] {
+input[type="text"],
+button {
     width: 100%;
     padding: 10px;
-}
-
-button {
-    padding: 10px 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+    margin-bottom: 10px;
 }
 
 /* Responsive styles */
 @media only screen and (max-width: 600px) {
-    #weather-container {
-        padding: 10px;
+    input[type="text"],
+    button {
+        width: 80%;
     }
 }
