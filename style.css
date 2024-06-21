@@ -84,3 +84,19 @@ button:hover{
 .hourly-item + .hourly-item {
     margin-right: 10px;
 }
+#weather-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    #weather-container {
+        padding: 10px;
+    }
+    
+    #city {
+        width: 80%;
+    }
+}
